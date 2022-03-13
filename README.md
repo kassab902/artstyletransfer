@@ -1,3 +1,6 @@
-# stylize-website-js
+This is a art style transfer website in TFJS. 
 
-# TODO List: support variable input sizes.
+Current plans are:
+- Support variable input image sizes
+- Get prettier website
+- Speed up and minify the model
