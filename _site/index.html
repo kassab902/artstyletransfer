@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <header>
+            <title>ArtStyle</title>
+        </header>    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jimp/0.16.1/jimp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.13.0/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite/dist/tf-tflite.min.js"></script>
+        
+        <link rel="stylesheet" href="static/css/main.css">
+    </head>
+    <body>
+        <form id="stylizeForm" action="javascript:beginStylization()">
+            <label for="styleInp">Select style:</label>
+            <br>
+            <img id="style"  height="256" width="256" src="static/images/candy.jpg" alt=""/>
+            <br>
+            <input accept="image/*" type='file' id="styleInp" />
+            <br>
+            <label for="contentInp">Select content:</label>
+            <br>
+            <img id="content" height="256" width="256" src="static/images/chicago.jpg" alt="" />
+            <br>
+            <input accept="image/*" type='file' id="contentInp" />    
+            <br>
+            <label for="iters">Style strength (higher requires more time):</label>
+            <br>
+            <input type="number" id="iters" value="1" min="1" max="4" />
+            <br>
+            <label for="max_resolution">Choose resolution (higher requires more time):</label>
+            <br>            
+            <input id="max_resolution" type="range" name="max_resolution" min="126" value="256" max="512"  oninput="this.nextElementSibling.value = this.value">
+            <output></output>
+            <br>
+            <input type="submit" value="Stylize! (might take a while)" id='stylizeBtn'>
+        </form>
+        <div id="loadingScreen" class="loader" style="display:none;"></div>
+        <canvas id="result" height="256" width="256" alt="">
+        <script src="index.js"></script>        
+    </body>
+</html>
