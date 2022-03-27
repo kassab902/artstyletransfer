@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "AAA"
+set -e
+
+gem install bundler
+bundle install

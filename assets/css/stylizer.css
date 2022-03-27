@@ -1,0 +1,101 @@
+body {
+  background-color: #f5f5f5;
+}
+.imagePreview {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  /* border-width: 0px; */
+  /* background-position: center center; */
+  /* background: url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg); */
+  /* background-color: #fff; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  display: inline-block;
+  box-shadow: 0px -3px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail-btn {
+  display: block;
+  /* border-radius: 0px; */
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+.imgUp {
+  margin-bottom: 15px;
+}
+.del {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.imgAdd {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #4bd7ef;
+  color: #fff;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 30px;
+  margin-top: 0px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+/* img zoom */
+/**THE SAME CSS IS USED IN ALL 3 DEMOS**/    
+/**gallery margins**/  
+ul.gallery{    
+  margin-left: 3vw;     
+  margin-right:3vw;  
+  }    
+  
+  .zoom {      
+  -webkit-transition: all 0.35s ease-in-out;    
+  -moz-transition: all 0.35s ease-in-out;    
+  transition: all 0.35s ease-in-out;     
+  cursor: -webkit-zoom-in;      
+  cursor: -moz-zoom-in;      
+  cursor: zoom-in;  
+  }     
+  
+  .zoom:hover,  
+  .zoom:active,   
+  .zoom:focus {
+  /**adjust scale to desired size, 
+  add browser prefixes**/
+  -ms-transform: scale(2.5);    
+  -moz-transform: scale(2.5);  
+  -webkit-transform: scale(2.5);  
+  -o-transform: scale(2.5);  
+  transform: scale(2.0);    
+  position:relative;      
+  z-index:100;  
+  }
+  
+  /**To keep upscaled images visible on mobile, 
+  increase left & right margins a bit**/  
+  @media only screen and (max-width: 768px) {   
+  ul.gallery {      
+  margin-left: 15vw;       
+  margin-right: 15vw;
+  }
+  
+  /**TIP: Easy escape for touch screens,
+  give gallery's parent container a cursor: pointer.**/
+  .DivName {cursor: pointer}
+  }
+
+  /* The rest */
+  .result-img {
+    width: 300px;
+    height: auto;
+  }
