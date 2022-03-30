@@ -17,7 +17,7 @@ Let's see how it works. Embedded below is a TensorflowJS application that will u
 {% include stylizer.html %}
 </section>
 
-## So how's it work?
+## So how does it work?
 
 Well, the real question is how's it work *in* TensorflowJS, given that the original source came from [PyTorch repo](https://github.com/GlebSBrykin/SANET)? 
 
