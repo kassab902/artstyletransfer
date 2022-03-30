@@ -48,7 +48,7 @@ jobs:
         echo "::set-output name=DEPLOY_BRANCH::gh-pages"
     - name: Make ci script runnable
       run: chmod +x bin/deploy
-    - name: Deploy website 
+    - name: Deploy website T
       run: yes | bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }}
                       --src ${{ steps.setup.outputs.SRC_BRANCH }} 
                       --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }} 
