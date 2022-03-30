@@ -27,7 +27,7 @@ We (the copilot & me) will also explain the model architecture in detail.
 
 An image is worth a ~~1000 words~~ [16x16 words](https://arxiv.org/abs/2010.11929). So, let's see the image of the architecture. 
 
-![Model architecture](/assets/img/model-arch.png)
+![Model architecture]({{ "/assets/img/model-arch.png" | prepend: site.baseurl }})
 
 That's one messy-looking model, but fear not. The copilot and me are going to explain it all. Let's read the image image from left to right. The two inputs are the content ($$I_c$$) and style ($$I_s$$)images. The content image is the image that we want to stylize. The style image is the image that we want to use as a style reference. 
 
