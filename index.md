@@ -2,10 +2,7 @@
 layout: default
 ---
 
-
-# Achtung! Style Attentional Network!
-
-Written by: [@akassab](https://github.com/kassab902) and [@copilot](https://copilot.github.com/)
+Written by: [@akassab](https://github.com/kassab902) and [@copilot](https://copilot.github.com/). Code available [here](https://github.com/kassab902/artstyletransfer).
 
 So, [attention](https://arxiv.org/abs/1706.03762) is dominating the AI field now. Not only for NLP, but also for pretty much [any *computable* task out there](https://arxiv.org/abs/2103.05247). So, why not use this approach for image stylization as well? After all, if a human were to stylize an image by hand, it's very much expected that they would pay attention to different parts of the style image when deciding how to stylize, say the Sun on the content image. 
 
