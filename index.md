@@ -34,9 +34,6 @@ The four short horizontal lines, $$F_c^{r_{41}}$$, $$F_c^{r_{51}}$$ and $$F_s^{r
 
 Now, we apply main ingredient to the mix, the attention! The two pairs of similar sized $$r_{41}$$ and $$r_{51}$$ images are pushed through the following equation:
 
-## The problem with VGG
-
-It's too big. [Unecessarily](https://machinethink.net/blog/compressing-deep-neural-nets/#:~:text=Since%20MobileNet%20is%2032%20times,paper%20by%20Han%20et%20al.) big. So, to make this app runnable on the mobile, we need to somehow make it smaller, without changing its outputs too much. Also, we don't want to train it anew. So, how do we do it?
 
 
 To be continued...

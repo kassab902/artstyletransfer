@@ -186,8 +186,8 @@ async function stylize(content_elem, style_elem, result_elem) {
             1,
             dtype='int32')
         const max_resolution = tf.scalar(
-            // document.getElementById('max_resolution').value,
-            256,
+            document.getElementById('max_resolution').value,
+            // 256,
             dtype='int32')
         
         console.log(content, style);
